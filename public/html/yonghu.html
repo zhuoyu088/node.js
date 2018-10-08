@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/zhangdan.css">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+
+    <!------主体------->
+    <div class="row" style="background: #eee">
+            <div class="col-md-2" style="border:1px solid white; padding: 10px 40px;">
+              <p><span class="glyphicon glyphicon-pencil">&nbsp;</span><a>功能列表</a></span></p>
+              <p><span class="glyphicon glyphicon-pencil">&nbsp;</span><a href="/html/zhangdan.html">账单管理</a></p>
+              <p><span class="glyphicon glyphicon-pencil">&nbsp;</span><a href="/html/gongyingshang.html">供应商管理</a></p>
+              <p><span class="glyphicon glyphicon-pencil">&nbsp;</span><a href="/html/yonghu.html">用户管理</a></p>
+              <p><span class="glyphicon glyphicon-pencil">&nbsp;</span><a href="/html/mima.html">密码修改</a></p>
+              <p><span class="glyphicon glyphicon-pencil">&nbsp;</span><a href="/html/tuichu.html">退出系统</a></p>
+            </div>
+            <div class="col-md-10">
+                <div class="zdgl"><p style="width:150px"><span class="glyphicon glyphicon-user">&nbsp;</span>用户管理：</p></div>
+
+
+                <div class="zdgls">
+                  
+                  <span>用户名名称:<input type="text"></span>
+                  <span> <button type="button" class="btn btn-default">查询</button></span>
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#addModal">添加</button></button>
+                </div>
+                <div class="zdglx">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>用户编码</th>
+                            <th>用户名称</th>
+                            <th>性别</th>
+                            <th>年龄</th>
+                            <th>电话</th>
+                            <th>用户类型</th> 
+                            <th>操作</th>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="#" data-toggle="modal" data-target="#reModal">编辑</a> <a href="" class="rinima">删除</a></td>
+                        </tr>
+                      </table>
+                </div>
+
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">1</button>
+                    <button type="button" class="btn btn-default">2</button>
+                </div>                   
+
+                
+          </div>
+
+
+
+          <!---------modal------------>
+          <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">添加用户</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="addname">用户编码</label>
+                        <input type="text" class="form-control">
+                      </div>
+
+                    </form>
+
+                    <form>
+                        <div class="form-group">
+                          <label for="addname">用户名称</label>
+                          <input type="text" class="form-control">
+                        </div>
+  
+                      </form>
+
+                      <form>
+                          <div class="form-group">
+                            <label for="addname">性别</label>
+                            <select class="form-control">
+                              <option>男</option>
+                              <option>女</option>
+                              <option>保密</option>
+                              </select>
+                          </div>
+    
+                        </form>
+
+                        <form>
+                            <div class="form-group">
+                              <label for="addname">年龄</label>
+                              <input type="text" class="form-control">
+                            </div>
+      
+                          </form>
+
+
+                              <form>
+                                  <div class="form-group">
+                                    <label for="addname">用户电话</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+            
+                                </form>
+
+
+                                <form>
+                                    <div class="form-group">
+                                      <label for="addname">用户类型</label>
+                                      <input type="text" class="form-control">
+                                    </div>
+              
+                                  </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+                    <button type="button" class="btn btn-primary">添加</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!----------------编辑模态框--------------------->
+
+            <div class="modal fade" id="reModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">信息修改</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="addname">用户编码</label>
+                          <input type="text" class="form-control">
+                        </div>
+  
+                      </form>
+  
+                      <form>
+                          <div class="form-group">
+                            <label for="addname">用户名称</label>
+                            <input type="text" class="form-control">
+                          </div>
+    
+                        </form>
+  
+                        <form>
+                            <div class="form-group">
+                              <label for="addname">性别</label>
+                              <select class="form-control">
+                                <option>男</option>
+                                <option>女</option>
+                                <option>保密</option>
+                                </select>
+                            </div>
+      
+                          </form>
+  
+                          <form>
+                              <div class="form-group">
+                                <label for="addname">年龄</label>
+                                <input type="text" class="form-control">
+                              </div>
+        
+                            </form>
+
+                            <form>
+                                <div class="form-group">
+                                  <label for="addname">电话</label>
+                                  <input type="text" class="form-control">
+                                </div>
+          
+                              </form>
+
+                              <form>
+                                  <div class="form-group">
+                                    <label for="addname">用户类型</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                
+                                </form>
+  
+                            
+
+                                
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+                      <button type="button" class="btn btn-primary">修改</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+    <script src="/lib/jquery/jquery-1.12.4.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/regmodal.js"></script>
+    <script src="/js/loginmodal.js"></script>
+    <script src="/js/header.js"></script>
+
+</body>
+</html>

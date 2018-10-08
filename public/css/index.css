@@ -1,0 +1,3 @@
+.row .col-md-2 p{ margin: 0 0 35px; border: 1px solid gray}
+.row .col-md-2 p:nth-child(1){background: ghostwhite;font-size: 14px}
+.row .col-md-2 p a{ color: black}
